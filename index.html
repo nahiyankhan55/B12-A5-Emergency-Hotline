@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joruri Seba</title>
+    <!-- tailwind css  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-gray-50">
+  <!-- Top Navbar -->
+  <div class="flex justify-between items-center px-6 py-3 bg-white shadow">
+    <div class="flex items-center gap-2">
+      <img src="./assets/logo.png" class="w-7 h-7" alt="logo"/>
+      <span class="font-extrabold text-lg text-green-800">Emergency<br>Service</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="text-gray-700">0</span>
+      <img src="./assets/heart.png" alt="heart" class="w-5 h-5">
+      <span class="bg-[#41ff6b1a] px-5 py-1 rounded-2xl text-sm">100</span>
+      <button class="bg-green-600 text-white px-4 py-1 rounded-3xl">2 Copy</button>
+    </div>
+  </div>
 </body>
 </html>
