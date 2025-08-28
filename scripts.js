@@ -1,5 +1,3 @@
-console.log("hello, world!");
-
 // Heart Function
 const heartElement = document.getElementById("heart");
 let heartQuantity = 0;
@@ -54,8 +52,24 @@ const onHotlineCall = (name, number) => {
   history.appendChild(historyChild);
   history.appendChild(historyP);
   callHistory.appendChild(history);
-  
+
   alert(`You have called ${name} ${number}.`);
   coinBalance -= 20;
   coinElement.innerText = coinBalance;
 };
+
+// History clear function
+const onClearClick = ()=>{   
+    callHistory.innerHTML = "";
+     alert("Call history cleared");
+}
+
+// Copy Function
+const copyCountP = document.getElementById("copy");
+let copyNum = 0;
+const copyBtnClick = (num) =>{
+    navigator.clipboard.writeText(num);
+    copyNum += 1;
+    copyCountP.innerText = copyNum;
+    alert(`নাম্বারটি কপি করা হয়েছেঃ ${num}`)
+}
