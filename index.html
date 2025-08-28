@@ -299,7 +299,7 @@
           </div>
             
         <!-- Call History -->
-       <div id="history" class="col-span-1 w-full flex flex-col items-center gap-3
+       <div class="col-span-1 w-full flex flex-col items-center gap-3
        bg-white rounded-2xl p-3 h-full">
         <div class="w-full flex items-center gap-3 justify-between">
         <p class="flex items-center gap-1 font-medium text-lg">
@@ -307,7 +307,11 @@
         </p>
         <button 
         onclick="onClearClick()"
-        class="px-5 py-2 rounded-full text-white bg-green-800 hover:bg-green-600 duration-300 font-medium hover:">Clear</button></div>
+        class="px-5 py-2 rounded-full text-white bg-green-800 hover:bg-green-600 duration-300 font-medium hover:">Clear</button>
+       </div>
+       <div class="w-full flex flex-col items-center gap-3" id="history">
+
+       </div>
       </div>
     </main>
     <script src="./scripts.js"></script>
